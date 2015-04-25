@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://user" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://user" xmlns:intf="http://user" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://user" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="EditUser">
+    <complexType/>
+   </element>
+   <element name="EditUserResponse">
+    <complexType>
+     <sequence>
+      <element name="EditUserReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="EditUserRequest">
+
+      <wsdl:part element="impl:EditUser" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="EditUserResponse">
+
+      <wsdl:part element="impl:EditUserResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="userInfo">
+
+      <wsdl:operation name="EditUser">
+
+         <wsdl:input message="impl:EditUserRequest" name="EditUserRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:EditUserResponse" name="EditUserResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="userInfoSoapBinding" type="impl:userInfo">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="EditUser">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="EditUserRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="EditUserResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="userInfoService">
+
+      <wsdl:port binding="impl:userInfoSoapBinding" name="userInfo">
+
+         <wsdlsoap:address location="http://localhost:8080/tirp/services/userInfo"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

@@ -1,0 +1,98 @@
+/** Phishing warning */
+
+#phishingWarning {
+    padding: 8px 20px 5px;
+    
+    color: #666;
+    background: #fffcca;
+    border-bottom: 1px solid #ccc;
+    font-size: 11px;
+}
+
+#phishingWarning img {
+    float: right;
+    border: 1px solid #999;
+}
+
+/** Login Form */
+
+#loginForm {
+    width: 400px;
+    padding: 0px 8px 8px 30px;
+    text-align: left;
+    margin: 40px auto 0 auto;
+}
+
+h3 { 
+    margin: 0.5em 0;
+}
+
+table.logintable {
+    width: 370px;
+    margin-top: 2em;
+}
+
+table.logintable td {
+    padding: 4px 0;
+}
+
+table.logintable label {
+    width: 60px;
+}
+
+div#signup { 
+    font-size: 120%;
+    color: #444;
+    margin: 2.5em 0 0 0;
+    border-top: 1px solid #ccc;
+    padding: 0;
+}
+
+div#signup.normal { 
+    font-size: 100%;
+    color: #666;
+}
+
+div#signup h2 { 
+    font-size: 120%;
+    padding-top: 1em;
+}
+
+
+/* Application login/join */
+
+div.application {
+    position: relative;
+    padding: 10px;
+    margin: 2em -10px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background: #f6f6f6;
+}
+
+div.application p {
+    margin: 0 0 5px 0;
+}
+
+div.application .name {
+    font-size: 14px;
+}
+
+div.application .description {
+    font-size: 10px;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/** Music manager login branding */
+
+div.musicmanager {
+    margin: 0;
+    padding: 12px 15px 4px;
+    
+    background: #869AB7;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    
+    text-align: center;
+}

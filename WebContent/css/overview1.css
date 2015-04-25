@@ -1,0 +1,286 @@
+body #page {
+    width: 900px !important;
+}
+
+/* Verify page grid widths */
+.g1  { width: 53.333333px; }
+.g2  { width: 126.666667px; }
+.g3  { width: 200px; }
+.g4  { width: 273.333333px; }
+.g5  { width: 346.666667px; }
+.g6  { width: 420px; }
+.g7  { width: 493.333333px; }
+.g8  { width: 566.666667px; }
+.g9  { width: 640px; }
+.g10 { width: 713.333333px; }
+.g11 { width: 786.666667px; }
+.g12 { width: 860px; }
+
+#join #content {
+    background: #fff no-repeat 0 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.backgroundsize #join #content  {
+    background-image:url(../images/bkgd_join@2x.png);
+
+    /* https://developer.mozilla.org/en-US/docs/CSS/background-size */
+    -webkit-background-size: 480px 265px;
+    -moz-background-size: 480px 265px;
+    background-size: 480px 265px;
+}
+
+.no-js #join #content,
+.no-backgroundsize #join #content {
+    background-image: url(..images/bkgd_join.png);
+}
+
+.no-js div.fixed #content {
+    min-height: 270px;
+}
+
+.no-js .memo-warn {
+    font-size: 18px;
+}
+
+.ticket-logo {
+    position: absolute;
+    top: 38px;
+    left: 56px;
+}
+
+.subscribe-overview .ticket-logo {
+    left: 64px;
+}
+
+.content-region {
+    padding: 0 0 0 225px;
+    margin: 20px 10px 0 0;
+}
+
+#signUp {
+    font-size: 15px;
+}
+
+.subscribe-overview #signUp {
+    margin-top: 18px;
+}
+
+#signUp #signIn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: #666;
+    font-size: 12px;
+}
+
+#signUp h1 {
+    font-size: 22px;
+    line-height: 30px;
+    color: #D51007;
+}
+
+.subscription-benefits p {
+    margin-bottom: 10px;
+}
+
+#signUpForm {
+    margin: 2em 0;
+    color: #333;
+}
+
+#signUpForm fieldset {
+    margin-bottom: 30px;
+}
+
+#signUpForm .field {
+    clear: both;
+    margin-bottom: 1em;
+}
+
+#signUpForm label {
+    display: block;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+#signUpForm .field-terms label {
+    display: inline;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+#signUpForm .field-terms .fieldstatus .ok {
+    display: none;
+}
+
+#signUpForm .input {
+    font-size: 16px;
+    line-height: 22px;
+    height: 22px;
+    display: block;
+    width: 288px;
+    border: 1px solid #999;
+    padding: 4px 5px;
+}
+
+#signUpForm .fieldstatus {
+    position: relative;
+    display: block;
+    float: right;
+    width: 300px;
+    margin: 0 0 0 0;
+    font-size: 11px;
+    line-height: 14px;
+}
+
+#signUpForm .fieldstatus div {
+    padding: 8px 10px;
+    color: #666;
+    background: #e9e9e9;
+    border: 1px solid #dbdbdc;
+}
+
+/* creates the larger triangle */
+#signUpForm .fieldstatus div:before {
+    content:"\00a0";
+    display:block; /* reduce the damage in FF3.0 */
+    position:absolute;
+    width:0;
+    height:0;
+    top:6px; /* controls vertical position */
+    left:-21px; /* value = - border-left-width - border-right-width */
+    border-width:10px 11px;
+    border-style:solid;
+    border-color:transparent #dbdbdc transparent transparent;
+}
+
+/* creates the smaller  triangle */
+#signUpForm .fieldstatus div:after {
+    content:"\00a0";
+    display:block; /* reduce the damage in FF3.0 */
+    position:absolute;
+    width:0;
+    height:0;
+    top:7px; /* value = (:before top) + (:before border-top) - (:after border-top) */
+    left:-18px; /* value = - border-left-width - border-right-width */
+    border-width:9px 10px;
+    border-style:solid;
+    border-color:transparent #e9e9e9 transparent transparent;
+}
+
+#signUpForm .fieldstatus div:before, x:-moz-any-link {display: none;} /* FF2 */
+#signUpForm .fieldstatus div:before, x:-moz-any-link, x:default {display: block;} /* FF3 */
+#signUpForm .fieldstatus div:after, x:-moz-any-link {display: none;} /* FF2 */
+#signUpForm .fieldstatus div:after, x:-moz-any-link, x:default {display: block;} /* FF3 */
+
+#signUpForm .fieldstatus div.error {
+    padding-left: 30px;
+    background: #fff9ad url(../images/error.png) no-repeat 7px 7px;
+    color: #000;
+    border-color: #dedcc8;
+}
+
+#signUpForm .fieldstatus div.error:before {
+    border-color:transparent #dedcc8 transparent transparent;
+}
+
+#signUpForm .fieldstatus div.error:after {
+    border-color:transparent #fff9ad transparent transparent;
+}
+
+#signUpForm .fieldstatus div.ok {
+    padding-left: 30px;
+    background: #d4e8c9 url(../images/ok.png) no-repeat 7px 7px;
+    color: #000;
+    border-color: #d1d7cf;
+}
+
+#signUpForm .fieldstatus div.ok:before {
+    border-color:transparent #d1d7cf transparent transparent;
+}
+
+#signUpForm .fieldstatus div.ok:after {
+    border-color:transparent #d4e8c9 transparent transparent;
+}
+
+#signUpForm #facebookAuth {
+    width: 288px;
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+#signUpForm #facebookAuth div {
+    text-align: center;
+}
+
+#signUpForm #facebookAuth div img {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.facebookBtn,
+.submitBtn {
+    height: 39px;
+    display: inline-block;
+    padding: 0 3px 0 0;
+    margin: 0;
+    background: transparent url(../images/button.png) no-repeat right top;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: right;
+    vertical-align: middle;
+    cursor: pointer;
+    text-shadow: rgba(0,0,0,0.5) 0 -1px 0;
+    overflow: visible;
+    white-space: nowrap;
+    border: none;
+}
+
+.facebookBtn span,
+.submitBtn span {
+    height: 35px;
+    padding: 2px 15px 2px 18px;
+    margin: 0;
+    background: transparent url(../images/button.png) no-repeat left top;
+    display: inline-block;
+    line-height: 35px;
+    vertical-align: top;
+}
+
+.facebookBtn {
+    margin: -10px 0 20px;
+    background: transparent url(../images/facebook_button.png) no-repeat right top;
+    text-shadow: rgba(0,0,0,0.8) 0 -1px 0;
+}
+
+.ie6 .facebookBtn,
+.ie7 .facebookBtn {
+    display: inline;
+    margin: 20px 0 20px;
+}
+
+a.facebookBtn {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.facebookBtn span {
+    padding: 2px 15px 2px 58px;
+    background: transparent url(../images/facebook_button.png) no-repeat left top;
+}
+
+.facebookBtn:hover, .facebookBtn:active, .facebookBtn:hover span, .facebookBtn:active span,
+.submitBtn:hover, .submitBtn:active, .submitBtn:hover span, .submitBtn:active span {
+    background-position: right -42px;
+}
+
+.facebookBtn:hover span, .facebookBtn:active span,
+.submitBtn:hover span, .submitBtn:active span {
+    background-position: left -42px;
+}

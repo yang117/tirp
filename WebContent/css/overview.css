@@ -1,0 +1,388 @@
+/* ==========================================================================
+   Funky non-standard homepage styles
+   ========================================================================== */
+
+body {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+input[type=text],
+input[type=password],
+textarea {
+    font-family: inherit;
+}
+
+a,
+a:hover {
+    color: #005399;
+}
+
+.content {
+    padding-top: 18px;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.content .anon-brand {
+    color: #333;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -1px;
+}
+
+.anon-brand strong {
+    color: #025a97 !important; 
+    font-weight: bold;
+}
+
+.anon-button {
+    background-color: #3ca4ec;
+    background: -webkit-linear-gradient(#3ca4ec, #2f83be);
+    background: -moz-linear-gradient(#3ca4ec, #2f83be);
+    background: -ms-linear-gradient(#3ca4ec, #2f83be);
+    background: -o-linear-gradient(#3ca4ec, #2f83be);
+    background: linear-gradient(#3ca4ec, #2f83be);
+
+    border-radius: 50px;
+
+    box-shadow: inset #f85560 0 1px 0,
+                inset #480000 0 -1px 0,
+                rgba(0,0,0,0.25) 0 1px 5px;
+
+    text-shadow: #480000 0 -1px 0;
+    color: #fff;
+    padding: 13px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.anon-button--big {
+    padding: 22px 26px;
+    font-size: 24px;
+}
+
+a:focus .anon-button,
+a:hover .anon-button,
+.anon-button:focus,
+.anon-button:hover {
+    background: #3ca4ec;
+    text-decoration: none;
+    color: #fff;
+}
+
+a:active .anon-button,
+.anon-button:active {
+    background: #014879;
+}
+
+.central-header {
+    text-align: center;
+    font-size: 24px;
+}
+
+.central-header h2 {
+    margin-bottom: 0;
+}
+
+.subheading {
+    color: #888;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.recommended-for-you .search-box,
+.intro-search-container .search-box {
+    border-radius: 50px;
+    background-color: #f2f2f2;
+    box-shadow: inset 0 2px 4px #ddd;
+    padding: 7px 14px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.search-box:focus {
+    outline: none;
+    box-shadow: 0 0 3pt 2pt rgb(94, 158, 214);
+}
+
+.definition {
+    font-weight: bold;
+    border-bottom: 1px dotted #888;
+}
+
+/* ==========================================================================
+   Intro
+   ========================================================================== */
+
+.intro {
+	background-image:url(../images/scrobblin_long_wire.jpg);
+    background-repeat: no-repeat;
+    background-position: 10px 0;
+    padding-bottom: 18px;
+}
+
+.content .intro-header h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.intro-and-search {
+    text-align: center;
+    padding: 16px 0;
+    margin-left: 220px;
+    padding-left: 30px;
+}
+
+.intro-copy {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 24px 0;
+}
+
+.intro-search-container {
+    display: inline-block;
+}
+
+.intro-search-container .search-box {
+    width: 400px;
+}
+
+.intro-search-container .autocomplete-results {
+    margin-top: 25px;
+    left: 0;
+}
+
+.recommended-for-you .search-progress,
+.intro-search-container .search-progress {
+    background-image: url("../images/spinner_f2f2f2_000000.gif");
+    top: 9px;
+    right: 12px;
+}
+
+.intro-join {
+    position: relative;
+    height: 190px;
+}
+
+.intro-join .anon-button {
+    float: right;
+    margin-top: 69px;
+    margin-right: 20px;
+}
+
+/* ==========================================================================
+   Up and Coming
+   ========================================================================== */
+
+.inset {
+    margin-right: -19px;
+    margin-left: -19px;
+    background-color: #e3e3e3;
+    box-shadow: rgba(0,0,0,0.2) 0 10px 10px -10px inset;
+}
+
+.up-and-coming {
+    padding: 12px 19px;
+}
+
+/* ==========================================================================
+   Join CTA
+   ========================================================================== */
+
+.join-call-to-action {
+    padding: 36px 0 9px;
+    text-align: center;
+}
+
+.join-call-to-action p {
+    font-size: 16px;
+    margin-top: 18px;
+}
+
+/* ==========================================================================
+   Charts
+   ========================================================================== */
+
+.charts {
+    margin-top: 36px;
+}
+
+.charts h3 {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.chart-item {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.chart-thumb {
+    display: block;
+    width: 62px;
+    height: 62px;
+}
+
+.chart-item-number {
+    position: absolute;
+    left: 0;
+
+    display: block;
+    border-radius: 3px;
+    background: #2f83be;
+    color: #fff;
+
+    font-size: 12px;
+    width: 19px;
+    line-height: 19px;
+    text-align: center;
+
+    text-shadow: #480000 0 -1px 0;
+}
+
+/* ==========================================================================
+   Recommended for you
+   ========================================================================== */
+
+.recommended-for-you {
+    margin-top: 36px;
+}
+
+.recommended-for-you-form {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.recommended-for-you-seed {
+    width: 380px;
+    margin: 0 auto 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.recommended-for-you-seed.iconright {
+    padding-right: 0;
+}
+
+.recommended-for-you-seed.iconright:after {
+    right: 10px;
+}
+
+.recommended-for-you-seed .text {
+    width: 100%;
+    font-size: 16px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.recommended-for-you-seed .autocomplete-results {
+    margin-top: 25px;
+    left: 0;
+}
+
+.recommended-result .cover-image {
+    height: 220px;
+}
+
+.recommended-result > a {
+    font-size: 14px;
+    color: #000;
+}
+
+.recommended-for-you-loading {
+    display: none;
+}
+
+.is-loading .recommended-for-you-loading {
+    display: block;
+    position: absolute;
+    right: -42px;
+    top: 0;
+}
+
+.recommended-for-you .async-error {
+    text-align: center;
+}
+
+.artist-grid-item .more-like-this {
+    margin-top: 12px;
+}
+
+/* ==========================================================================
+   Promo units
+   ========================================================================== */
+
+.promo-units .central-header {
+    margin-bottom: 24px;
+}
+
+
+/* ==========================================================================
+   Huge wiki of artist biographies & discographies
+   ========================================================================== */
+
+.stats-container {
+    margin-top: 36px;
+}
+
+.theme-whittle .stats {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 52px;
+}
+
+.stat {
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    font-size: 36px;    
+}
+
+.stat a {
+    display: block;
+    padding-top: 92px;
+    color: #898989;
+}    
+
+.stat a:hover {
+    text-decoration: none;
+}
+
+.stat strong {
+    display: block;
+    font-size: 24px;
+}
+
+.stat a:hover strong {
+    text-decoration: underline;
+}
+
+.scrobbles-today {
+    background-image: url('../images/headphones_icon.png');
+}
+
+.artist-pages {
+    background-image: url('../images/artist_icon.png');
+}
+
+.album-pages {
+    background-image: url('../images/album_icon.png');
+}
+
+.track-pages {
+    background-image: url('../images/track_icon.png');
+}
+
+/* ==========================================================================
+   Tweaks 
+   ========================================================================== */
+
+.cover-image,
+.chart-item-number {
+    border-radius: 50px;
+}
